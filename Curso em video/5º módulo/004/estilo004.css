@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font: normal 20pt Arial;
+    color: white;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    font: normal 12pt Arial;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 2px;
+    font: normal 16pt Arial;
+    background-color: white;
+}
