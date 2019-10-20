@@ -52,7 +52,7 @@ function verificar(){
             img.setAttribute('src', 'img/não definino.jpg');
         };
         
-        res.innerHTML = `<p>Detectamos uma pessoa de gênero <strong>${genero}</strong> e idade de <strong>${idade}</strong></p>`;
+        res.innerHTML = `<p>Você é uma pessoa do gênero <strong>${genero}</strong> e idade de <strong>${idade} anos</strong></p>`;
         res.appendChild(img);
         for(i = 0; i < fSex.length; i++){
             fSex[i].checked = false;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+    <title>Pizza na Janta!</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos comer Pizza!</h1>
+    </header>
+    <section>
+        <div>
+            <h2>Quantas pizzas você quer?</h2>
+            <input type="number" name="numeroDePizzas" id="numeroDePizzas" min="0">
+            <button onclick="pedir()">Pedir</button>           
+        </div>
+        <div>
+            <h2>Quantos pedaços você come?</h2>
+            <input type="number" name="pedaçosComidos" id="pedaçosComidos" min="0">
+            <button onclick="comer()">Comer</button>           
+        </div>
+        <div>
+            <p>Você comeu: <span class="res" >0</span> pedaços</p>
+            <p>Você deixou: <span class="res" >0</span> pedaços</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Paulo Henrique</p>
+    </footer>
+</body>
+</html>
