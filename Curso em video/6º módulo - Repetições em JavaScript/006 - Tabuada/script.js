@@ -10,7 +10,6 @@ function multiplicar(){
         
         for(i = 0; i <= 10; i++){
             let res = numeroMultiplicado * i;
-            let correcao = i - 1;
             if(criar){
                 let novaLinha = document.createElement('option');
                 tabuada.appendChild(novaLinha);
