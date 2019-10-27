@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 10</title>
+</head>
+<body>
+
+    <div id="nissan">
+
+    </div>
+
+    <script>
+    
+    let versa = document.createElement('p');
+    versa.innerText = 'Versa';
+    let sentra = document.createElement('p');
+    sentra.innerText = 'Sentra';
+    document.getElementById('nissan').appendChild(versa);
+    document.getElementById('nissan').appendChild(sentra);
+    document.getElementById('nissan').removeChild(versa);
+    
+    </script>
+</body>
+</html>

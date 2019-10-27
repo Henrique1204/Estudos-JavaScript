@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 6</title>
+</head>
+<body>
+    
+    <div class="teste">1</div>
+    <div class="teste">2</div>
+    <div class="teste">3</div>
+    
+    <div id="pai">
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+    </div>
+    
+    <div id="paizao">
+        <div class="filho">alo</div>
+        <div class="filho">oi</div>
+        <div class="filho">olá</div>
+    </div>
+    
+    <p>Oi</p>
+    <p>Olá</p>
+    
+    <script>
+        
+        console.log(document.querySelectorAll('.teste'));
+        console.log(document.getElementById('pai').querySelectorAll('.filho')[0].innerHTML);
+        console.log(document.getElementById('paizao').querySelectorAll('.filho')[0].innerHTML);
+        
+    </script>
+</body>
+</html>
