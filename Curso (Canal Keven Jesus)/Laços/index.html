@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 17</title>
+</head>
+<body>
+
+    <div class="js">React</div>
+    <div class="js">Angular</div>
+    <div class="js">TypeScript</div>
+    <div class="js">ES6</div>
+
+    <script>
+        let js = document.getElementsByClassName('js');
+        let array = [1, 2, 3, 4];
+
+        for(i = 0; i < js.length; i++){
+            let texto = js[i].innerText;
+            js[i].innerText = `Curso ${texto} js`;
+            console.log(js[i].innerText);
+        };
+
+        for(let cursos of js){
+            let texto = cursos.innerText;
+            cursos.innerText = `Curso ${texto} js 2`;
+            console.log(cursos.innerText);
+        }
+
+
+        for(i = 0; i < js.length; i++){
+            if(js[i].innerText ===  'Curso Angular js'){
+                js[i].innerText = 'flay';
+            }
+        }
+
+        array.forEach(function(element, index){
+            if(element === 1){
+                array[index] = 'flay caramba';
+            }
+        });
+
+        let nova = array.map(function(element,index){
+            if(element === 2){
+                element = 'flay caramba';
+            }
+
+            return element;
+        });
+
+        console.log(nova);
+    </script>
+</body>
+</html>
