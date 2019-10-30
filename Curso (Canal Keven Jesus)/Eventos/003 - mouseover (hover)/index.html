@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 22</title>
+</head>
+<body>
+    
+    <h1>
+        <a href="#" id="link">Olá humanos, tudo bem?</a>
+    </h1>
+
+    <table style="width: 100%;">
+        <thead>
+            <th align="left">Nome</th>
+            <th align="left">Idade</th>
+        </thead>
+        <tbody>
+            <tr class="tr">
+                <td style="height: 30px;">Alien</td>
+                <td style="height: 30px;">Bicho papão</td>
+            </tr>
+            <tr class="tr">
+                <td style="height: 30px;">2000</td>
+                <td style="height: 30px;">1000</td>
+            </tr>
+        </tbody>
+    
+    </table>
+
+    <script>
+    
+        let link = document.getElementById('link');
+        let tr = document.querySelectorAll('.tr');
+
+        link.addEventListener('mouseover', ()=>{
+            link.style.backgroundColor
+        });
+
+        link.addEventListener('mouseleave', ()=>{
+            link.style.color = 'blue';
+        });
+
+        for(linha of tr){
+
+            linha.addEventListener('mouseover', function(){
+                this.style.backgroundColor = 'blue';
+            });
+
+            linha.addEventListener('mouseleave', function(){
+                this.style.backgroundColor = 'white';
+            });
+        };
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 24</title>
+</head>
+<body>
+
+    <input type="text" id="nome">
+    <input type="text" id="sobrenome">
+
+
+    <script>
+    
+        let nome = document.getElementById('nome');
+        let sobrenome = document.getElementById('sobrenome');
+
+        // quando o elemento perde o foco
+        nome.addEventListener('blur', function(){
+            sobrenome.value = this.value;
+        });
+
+    </script>
+</body>
+</html>

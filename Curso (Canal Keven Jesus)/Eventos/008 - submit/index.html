@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 27</title>
+</head>
+<body>
+    
+    <form action="#" method="POST">
+        <input type="text" name="name" value="Keven">
+        <input type="text" name="email" value="falecomkeven.com.br">
+        <button type="submit">enter</button>
+    </form>
+    
+    <script>
+        
+        let form = document.querySelector('form');
+        let nome = document.getElementsByName('name');
+        let email = document.getElementsByName('email');
+        
+        form.addEventListener('submit', function(evento){
+
+            evento.preventDefault();
+
+            let item = this.elements
+            let eValido = true;
+            
+            for(i = 0; i < item.length; i++){
+                
+                if(item[i].type !== 'submit'){
+
+                    if(item[i].value == ''){
+                        item[i].style.border = '1px solid red';
+                    }else{
+                        item[i].style.border = '1px solid gray';
+                    };
+                    eValido = false;
+                };
+            };
+            console.log(eValido);
+        });
+        
+    </script>
+</body>
+</html>

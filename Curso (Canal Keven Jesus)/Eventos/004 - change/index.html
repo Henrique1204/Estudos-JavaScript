@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 23</title>
+</head>
+<body>
+    <select id="linguagens">
+        <option value="1">php</option>
+        <option value="2">JavaScript</option>
+        <option value="3">Java</option>
+        <option value="4">c#</option>
+    </select>
+
+    <script>
+    
+        let linguagens = document.getElementById('linguagens');
+
+        linguagens.addEventListener('change', function(){
+            let options = this.options;
+            let itemAtual = this.selectedIndex;
+
+            console.log(options[itemAtual].text);
+        });
+    
+    </script>
+</body>
+</html>
