@@ -17,8 +17,9 @@ header{
 
 h1{
     margin-right: 100px;
-    color: white;
+    color: rgb(243, 243, 76);
     font-size: 30pt;
+    text-shadow: 2px 2px rgb(206, 196, 196);
 }
 
 nav{
@@ -38,4 +39,34 @@ nav>a{
 nav>a:hover, a.ativo{
     color: black;
     background-color: white;
+}
+
+#introducao{
+    margin-top: 70px;
+    height: calc(100vh - 110px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(img/introdução/javascript.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 142, 236);
+    color: white;
+}
+
+#introducao>h2{
+    width: 500px;
+    font-size: 25pt;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+#introducao>p{
+    margin: 10px 30px;
+    width: 500px;
+    font-size: 15pt;
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: 3px 3px black;
 }
