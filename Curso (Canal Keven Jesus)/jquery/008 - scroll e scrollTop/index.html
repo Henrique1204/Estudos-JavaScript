@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            top: 0;
+            position: fixed;
+        }
+        nav{
+            width: 100vw;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 20px;
+        }
+        a:hover, a.active{
+            background-color: white;
+            color: black;
+        }
+        .item{
+            margin-top: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        body:nth-child(2){
+            margin-top: 100vh;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            left: 90vw;
+            top: 90vh;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        
+        
+    </style>
+    <title>Aula 36</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="#empresa">EMPRESA</a>
+            <a href="#projeto">PROJETO</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+    </header>
+    <div class="item">
+        <h2 id="empresa">EMPRESA</h2>
+    </div>   
+    <div class="item">
+        <h2 id="projeto">PROJETO</h2>
+    </div>   
+    <div class="item">
+        <h2 id="contato">CONTATO</h2>
+    </div>
+    <button id="subir">Subir</button>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        
+        let links = $('a');
+        let subir = $('#subir');
+
+        $(window).scroll(function(){
+            let minhaPosicao = $(this).scrollTop();
+            if(minhaPosicao < 557){
+                $(subir).fadeOut(500);
+            }else{
+                $(subir).fadeIn(500);
+            };
+        });
+
+        links.click(function(){
+            links.removeClass('active');
+            $(this).addClass('active');
+
+            let seletor = $(this).attr('href');
+            let posicao = $(seletor).offset().top;
+            $('HTML, body').animate({scrollTop: posicao - 80}, 1500);
+        });
+
+        subir.on('click', function(){
+            $('HTML, body').animate({scrollTop: 0}, 1000);
+        });
+        
+    </script>
+</body>
+</html>

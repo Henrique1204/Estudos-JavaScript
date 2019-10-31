@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 34</title>
+</head>
+<body>
+
+    <form action="#">
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" placeholder="00000-000">
+
+        <label for="logradouro">Logradouro</label>
+        <input type="text" name="logradouro" id="logradouro" placeholder="Avenida exemplo de tal">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="resultado"></div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    
+        let form = $('form');
+        let res = $('#resultado');
+
+        form.on('submit', function(evento){
+            evento.preventDefault();
+
+            let dados = $(this).serialize();
+            //.serializaArray(); define os dados em objetos dentro de um array
+            res.text(dados);
+
+        });
+        
+    </script>
+</body>
+</html>

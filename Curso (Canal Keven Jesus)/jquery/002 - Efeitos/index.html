@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    
+    body{
+        background-color: #efefef;
+    }
+    .box{
+        position: relative;
+        left:0;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+    
+    </style>
+    <title>Aula 30</title>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    
+        let box = $('.box');
+
+        box.animate({
+            width: '200px',
+            height: '200px',
+            left: '500px'
+        }, 5000);
+        box.fadeOut(2500);
+        box.fadeIn(2500);
+    
+    </script>
+</body>
+</html>

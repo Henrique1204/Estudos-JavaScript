@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            height: 67px;
+            display: flex;
+            align-items: center;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 20px;
+        }
+        a:hover, a.active{
+            background-color: yellow;
+            color: black;
+        }
+    
+    
+    
+    
+    </style>
+    <title>Aula 33</title>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">Empresas</a></li>
+        <li><a href="#" class="link">Projetos</a></li>
+        <li><a href="#" class="link">Contato</a></li>
+    </ul>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    
+        let links = $('.link');
+
+        links.on('click', function(){
+
+            links.removeClass('active');
+            $(this).addClass('active');
+
+        });
+    
+    </script>
+</body>
+</html>

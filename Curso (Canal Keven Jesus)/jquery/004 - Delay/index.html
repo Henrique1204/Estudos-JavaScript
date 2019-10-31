@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 32</title>
+</head>
+<body>
+
+    <button>Click</button>
+    <div class="menssagem">Olá, Brasil</div>
+    
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    
+        let botao = $('button');
+        let msg = $('.menssagem');
+
+        botao.on('click', function(){
+            msg.delay(3000).fadeOut();
+        });
+    
+        //delay('slow') delay('fast') delay('1000')
+        
+    </script>
+</body>
+</html>

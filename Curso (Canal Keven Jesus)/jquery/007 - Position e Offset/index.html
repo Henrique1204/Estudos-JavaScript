@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    .espaco{
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        padding: 20px;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: rebeccapurple;
+    }
+    
+    
+    </style>
+    <title>Aula 35</title>
+</head>
+<body>
+    
+    <div class="espaco">
+        <div class="item"></div>
+    </div>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    
+        let espaco = $('.espaco');
+        let item = $('.item');
+        let posicao = item.offset();
+        
+        //.offset() pega a coordenada do body
+        //.position(); pega a coordenada do elemento pai
+
+
+        console.log(posicao.left, posicao.top);
+    
+    </script>
+</body>
+</html>

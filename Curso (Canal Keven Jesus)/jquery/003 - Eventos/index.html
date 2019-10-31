@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+        body{
+            background-color: #efefef;
+        }
+        .box{
+            position: relative;
+            left:0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        button{
+            font-size: 2rem;
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        
+    </style>
+    <title>Aula 31</title>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <hr>
+    <button id="ir">> GO GO GO</button>
+    <button id="voltar">< BACK BACK BACK</button>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        
+        let box = $('.box');
+        let botaoIr = $('#ir');
+        let botaoVoltar = $('#voltar');
+
+        /*
+        botao.click(function(){
+            console.log('olá');
+        });
+        */
+        
+        botaoIr.on('click', function(){
+            box.animate({
+                left: '500px'
+            }, 2000);
+        });
+
+        botaoVoltar.click(function(){
+            box.animate({
+                left: '0px'
+            }, 2000);
+        });
+        
+    </script>
+</body>
+</html>
