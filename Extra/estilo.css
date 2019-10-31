@@ -41,6 +41,12 @@ nav>a:hover, a.ativo{
     background-color: white;
 }
 
+button:focus, a:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
 #introducao{
     margin-top: 70px;
     height: calc(100vh - 110px);
@@ -55,10 +61,11 @@ nav>a:hover, a.ativo{
     color: white;
 }
 
-#introducao>h2{
+h2{
     width: 500px;
     font-size: 25pt;
     text-align: center;
+    color: white;
     text-shadow: 3px 3px black;
 }
 
@@ -69,4 +76,37 @@ nav>a:hover, a.ativo{
     font-weight: bolder;
     text-align: justify;
     text-shadow: 3px 3px black;
+}
+
+#boasVindas{
+    background-color: rgb(70, 142, 236);
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boasVindas>div{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+}
+
+#boasVindas label{
+    font-size: 15pt;
+    text-shadow: 1px 1px rgb(99, 93, 93);
+}
+
+#boasVindas button{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
