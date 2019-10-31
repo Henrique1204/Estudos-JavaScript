@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    margin: 0;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+h1{
+    margin-right: 100px;
+    color: white;
+    font-size: 30pt;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav>a{
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+nav>a:hover, a.ativo{
+    color: black;
+    background-color: white;
+}
