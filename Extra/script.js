@@ -30,6 +30,7 @@ function darBoasVindas(){
 
     if(nomeDeBoasVindasValor !== '' && nomeDeBoasVindasValor){
 
+        verificarPeriodoDoDia();
         let analisar = confirm(`${comprimento} ${nomeDeBoasVindasValor}, seja Bem-vindo(a) ao meu site e fique avontade. Quer analisar seu nome?`);
         if(analisar){
             alert(`Seu nome tem ${nomeDeBoasVindasValor.length} letras`);
@@ -89,8 +90,10 @@ for(operadores of calculadoraOperadores){
     operadores.onclick = calcular;
 };
 
-window.addEventListener('load', function(){
 
+window.onload = setInterval(function(){
+
+    verificarPeriodoDoDia();
     let agora = new Date();
     let hora = agora.getHours();
     let minutos = agora.getMinutes();
@@ -107,4 +110,4 @@ window.addEventListener('load', function(){
         imagemDoPeriodoDoDia.src = 'img/período do dia/noite.jpg';
         periodoDoDia.style.backgroundColor = '#515154'
     };
-});
+}, 1000);
