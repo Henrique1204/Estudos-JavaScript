@@ -15,7 +15,11 @@ const inicio = document.getElementById('inicio');
 const fim = document.getElementById('fim');
 const passo = document.getElementById('passo');
 const resultadoContaPasso = document.querySelector('#contarPasso p');
+const tabuada = document.getElementById('tabuada');
+const multiplicado = document.getElementById('multiplicado');
+const botaoGerarTabuada = document.querySelector('#gerarTabuada button');
 let comprimento;
+let criarTabuada = true;
 
 function verificarPeriodoDoDia(){
     let agora = new Date();
@@ -144,6 +148,32 @@ function verificarIdade(){
     
 };
 
+function gerarTabuada(){
+
+    let numeroMultiplicado = Number(multiplicado.value);
+    
+    if(numeroMultiplicado != ''){
+        
+        for(i = 0; i <= 10; i++){
+            let resultadoDaMultiplicacao = numeroMultiplicado * i;
+            if(criarTabuada){
+                let novaLinha = document.createElement('option');
+                tabuada.appendChild(novaLinha);
+                let linhas = document.getElementsByTagName('option');
+                linhas[i].setAttribute('value', `multiplicador${i}`);
+            };
+            let linhas = document.getElementsByTagName('option');
+            linhas[i].text = `${numeroMultiplicado} X ${i} = ${resultadoDaMultiplicacao}`;
+        };
+        criarTabuada = false;
+        multiplicado.value = '';
+        multiplicado.focus();
+        
+    }else{
+        alert('[ERRO] defina um numero a ser multiplicado');
+    };
+};
+
 window.onload = verificarPeriodoDoDia;
 
 botaoBoasVindas.onclick = darBoasVindas;
@@ -232,4 +262,11 @@ botaoContarPasso.addEventListener('click', function contar(){
         resultadoContaPasso.innerText = 'Impossível contar, preencha todos os campos'
     };
 
+});
+
+botaoGerarTabuada.onclick = gerarTabuada;
+multiplicado,addEventListener('keyup', function(evento){
+    if(evento.keyCode === 13){
+        gerarTabuada();
+    };
 });

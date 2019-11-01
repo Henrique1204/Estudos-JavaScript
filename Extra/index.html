@@ -11,9 +11,6 @@
 <body>
     <!--
         Lista deexercícios a serem acrescentados
-        modulo 6 -- 002
-        modulo 6 -- 005
-        modulo 6 -- 006
         modulo 7 -- 003
     -->
     <header>
@@ -80,13 +77,26 @@
         </div>
     </section>
     <section id="contarPasso">
+        <h2>Contador de Passos</h2>
         <div class="caixaPadrao">
                 <label for="inicio">Início: <input type="number" name="inicio" id="inicio"></label>
                 <label for="fim">Fim: <input type="number" name="fim" id="fim"></label>
                 <label for="passo">Passo: <input type="number" name="passo" id="passo"></label>
-                <button>Contar</button>           
+                <button class="semOutline">Contar</button>           
             <div>
                 <p id="resultadoContaPasso">Preparando a contagem...</p>
+            </div>
+        </div>
+    </section>
+    <section id="gerarTabuada">
+        <h2>Gerador de tabuada</h2>
+        <div class="caixaPadrao">
+            <div id="dadosTabuada">
+                <p>Digite um numero:<input type="number" name="multiplicado" id="multiplicado"></p>
+                <button class="semOutline">Multiplicar</button>           
+            </div>
+            <div>
+                <select name="tabuada" id="tabuada" size="11"></select>
             </div>
         </div>
     </section>
