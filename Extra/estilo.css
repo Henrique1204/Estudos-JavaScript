@@ -83,6 +83,10 @@ h2{
     text-shadow: 3px 3px black;
 }
 
+#credito{
+    text-align: center!important;
+}
+
 section{
     background-color: rgb(70, 142, 236);
     height: calc(100vh - 60px);
@@ -194,6 +198,7 @@ section{
 }
 
 #verificarIdade .caixaPadrao>div{
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -206,4 +211,10 @@ section{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+}
+
+#contarPasso .caixaPadrao{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
