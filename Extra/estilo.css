@@ -97,6 +97,7 @@ section{
     align-items: center;
     background-color: white;
     box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
 }
 
 #boasVindas label{
@@ -165,4 +166,20 @@ section{
     background-color: rgb(211, 218, 238);
     font-size: 20pt;
     font-weight: 500;
+}
+
+#periodoDoDia .caixaPadrao{
+    height: 400px;
+    flex-direction: column;
+}
+
+#periodoDoDia img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#periodoDoDia p{
+    font-size: 15pt;
+    text-shadow: 1px 1px gray;
 }
