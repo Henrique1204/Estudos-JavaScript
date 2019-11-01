@@ -22,9 +22,26 @@
     </section>
     <section id="boasVindas">
         <h2>Boas Vindas</h2>
-        <div>
+        <div class="caixaPadrao">
             <label for="nomeDeBoasVindas">Digite seu nome: <input type="text" name="nomeDeBoasVindas" id="nomeDeBoasVindas"></label>
             <button>Pronto</button>
+        </div>
+    </section>
+    <section id="calculadora">
+        <h2>Calculadora</h2>
+        <div class="caixaPadrao">
+            <div id="painel">
+                <input type="number" class="numero" value="0">
+                <div id="sinalDaOperacao"></div>
+                <input type="number" class="numero" value="0">
+                <div id="resultadoCalculadora"></div>
+            </div>
+            <div>
+                <button class="operadores" value="+">Somar</button>
+                <button class="operadores" value="-">Subtrair</button>
+                <button class="operadores" value="X">Multiplicar</button>
+                <button class="operadores" value="/">Dividir</button>
+            </div>
         </div>
     </section>
 </body>
