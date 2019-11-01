@@ -47,6 +47,10 @@ nav>a:hover, a.ativo{
     outline-offset: 0px;
 }
 
+button, a{
+    cursor: pointer;
+}
+
 #introducao{
     margin-top: 70px;
     height: calc(100vh - 110px);
@@ -182,4 +186,24 @@ section{
 #periodoDoDia p{
     font-size: 15pt;
     text-shadow: 1px 1px gray;
+}
+
+#verificarIdade .caixaPadrao{
+    height: auto;
+    flex-direction: column;
+}
+
+#verificarIdade .caixaPadrao>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#verificarIdade button{
+    font: normal 18pt Arial;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }

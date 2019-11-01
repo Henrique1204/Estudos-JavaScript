@@ -11,8 +11,6 @@
 <body>
     <!--
         Lista deexercícios a serem acrescentados
-        modulo 5 -- 008
-        modulo 5 -- 009
         modulo 6 -- 002
         modulo 6 -- 005
         modulo 6 -- 006
@@ -26,7 +24,7 @@
     </header>
     <section id="introducao">
         <h2>Sobre o Projeto:</h2>
-        <p>Este site serve como uma forma de aplicar tudo que foi aprendido dentro dos dois primeiros cursos que eu fiz.</p>
+        <p>Este site serve como uma forma de praticar tudo que foi aprendido dentro dos dois primeiros cursos que eu fiz.</p>
         <p>O primeiro: Curso de JavaScript do curso em vídeo, o segundo: Curso de JavaScript e jQuery gratis do Keven Jesus.</p>
     </section>
     <section id="boasVindas">
@@ -58,6 +56,26 @@
         <div class="caixaPadrao">
             <p></p>
             <img src="" alt="">
+        </div>
+    </section>
+    <section id="verificarIdade">
+        <h2>Verificar idade</h2>
+        <div class="caixaPadrao">
+            <div>
+                <p>Ano de nascimento:
+                    <input type="number" name="txtano" id="txtano" min="0">
+                </p>
+                <p>Sexo
+                    <input type="radio" name="radsex" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <button class="semOutline" id="botaoVerificarIdade">Verificar</button>
+                </p>
+            </div>
+            <div id="mostrarIdade"></div>
         </div>
     </section>
 </body>
