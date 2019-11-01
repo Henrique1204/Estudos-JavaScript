@@ -41,7 +41,7 @@ nav>a:hover, a.ativo{
     background-color: white;
 }
 
-button:focus, a:focus{
+.semOutline:focus{
     outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: 0px;

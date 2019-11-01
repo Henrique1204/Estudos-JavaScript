@@ -8,10 +8,34 @@ const resultadoCalculadora = document.getElementById('resultadoCalculadora');
 function darBoasVindas(){
     
     let nomeDeBoasVindasValor = nomeDeBoasVindas.value;
-    
+
     if(nomeDeBoasVindasValor !== '' && nomeDeBoasVindasValor){
-        alert(`Olá ${nomeDeBoasVindasValor}, seja Bem-vindo(a) ao meu site e fique avontade`);
+
+        let agora = new Date();
+        let hora = agora.getHours();
+        let comprimento;
+
+        if(hora > 5 && hora < 13){
+            comprimento = 'Bom dia';
+        }else if(hora < 18){
+            comprimento = 'Boa tarde';
+        }else if(hora < 1){
+            comprimento = 'Boa noite';
+        }else{
+            comprimento = 'Boa madrugada';
+        }
+
+        alert(`${comprimento} ${nomeDeBoasVindasValor}, seja Bem-vindo(a) ao meu site e fique avontade`);
+        alert(`Seu nome tem ${nomeDeBoasVindasValor.length} letras`);
+        alert(`Convertendo para maiúsculo fica ${nomeDeBoasVindasValor.toUpperCase()}`);
+        alert(`Convertendo para minúsculo fica ${nomeDeBoasVindasValor.toLocaleLowerCase()}`);
         nomeDeBoasVindas.value = '';
+        nomeDeBoasVindas.focus();
+        nomeDeBoasVindas.removeAttribute('class', 'semOutline');
+        nomeDeBoasVindas.style.borderColor = 'initial';
+    }else{
+        nomeDeBoasVindas.style.borderColor = 'red';
+        nomeDeBoasVindas.setAttribute('class', 'semOutline');
         nomeDeBoasVindas.focus();
     };
 };
