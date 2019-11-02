@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/icones/favicon-js.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/estilo geral.css">
     <link rel="stylesheet" href="CSS/estilo header e footer.css">
     <link rel="stylesheet" href="CSS/estilo padrão.css">
     <link rel="stylesheet" href="CSS/estilo introdução.css">
     <link rel="stylesheet" href="CSS/estilo calculadora.css">
     <link rel="stylesheet" href="CSS/estilo analisador de numeros.css">
-
-    <script src="script.js" defer></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="scripts/dar boas vindas.js" defer></script>
+    <script src="scripts/verificar período do dia.js" defer></script>
+    <script src="scripts/calculadora.js" defer></script>
+    <script src="scripts/verificar idade.js" defer></script>
+    <script src="scripts/contar passos.js" defer></script>
+    <script src="scripts/gerar tabuada.js" defer></script>
+    <script src="scripts/analisar numeros.js" defer></script>
+    <script src="scripts/rolar suavemente.js" defer></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
     <title>Meu JavaScript</title>
 </head>
 <body>
@@ -49,6 +56,7 @@
                 <div id="sinalDaOperacao"></div>
                 <input type="number" class="numero" value="0">
                 <div id="resultadoCalculadora"></div>
+                <button class="semOutline operadores" value="limpar">Limpar</button>
             </div>
             <div>
                 <button class="operadores semOutline" value="+">Somar</button>
