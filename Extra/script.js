@@ -214,7 +214,7 @@ function adicionarNumerosNaListaDeAnalise(){
             for(i = 0; i < itensAnalisarNumeros.length; i++){
                 let novaLinha = document.createElement('option');
                 lista.appendChild(novaLinha);
-                let linhas = document.getElementsByTagName('option');
+                let linhas = document.querySelectorAll('#analisarNumeros option');
                 linhas[i].text = `Valor ${itensAnalisarNumeros[i]} adicionado.`;
                 linhas[i].setAttribute('value', `valor ${itensAnalisarNumeros[i]}`);
             };
@@ -401,6 +401,7 @@ links.click(function(){
 
 subir.on('click', function(){
     $('HTML, body').animate({scrollTop: 0}, 1000);
+    links.removeClass('ativo');
 });
 
 console.log($('#boasVindas').position().top);
