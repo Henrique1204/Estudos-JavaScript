@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="CSS/estilo geral.css">
+    <link rel="stylesheet" href="CSS/estilo header e footer.css">
+    <link rel="stylesheet" href="CSS/estilo padrão.css">
+    <link rel="stylesheet" href="CSS/estilo introdução.css">
+    <link rel="stylesheet" href="CSS/estilo calculadora.css">
+    <link rel="stylesheet" href="CSS/estilo analisador de numeros.css">
+
     <script src="script.js" defer></script>
     <script src="jquery-3.4.1.min.js"></script>
     <title>Meu JavaScript</title>
@@ -32,7 +38,7 @@
         <h2>Boas Vindas</h2>
         <div class="caixaPadrao">
             <label for="nomeDeBoasVindas">Digite seu nome: <input type="text" name="nomeDeBoasVindas" id="nomeDeBoasVindas"></label>
-            <button class="semOutline">Pronto</button>
+            <button class="semOutline botaoPadrao">Pronto</button>
         </div>
     </section>
     <section id="calculadora">
@@ -73,7 +79,7 @@
                     <label for="fem">Feminino</label>
                 </p>
                 <p>
-                    <button class="semOutline" id="botaoVerificarIdade">Verificar</button>
+                    <button class="semOutline botaoPadrao" id="botaoVerificarIdade">Verificar</button>
                 </p>
             </div>
             <div id="mostrarIdade"></div>
@@ -85,7 +91,7 @@
             <label for="inicio">Início: <input type="number" name="inicio" id="inicio"></label>
             <label for="fim">Fim: <input type="number" name="fim" id="fim"></label>
             <label for="passo">Passo: <input type="number" name="passo" id="passo"></label>
-            <button class="semOutline">Contar</button>           
+            <button class="semOutline botaoPadrao">Contar</button>           
             <div>
                 <p id="resultadoContaPasso">Preparando a contagem...</p>
             </div>
@@ -96,7 +102,7 @@
         <div class="caixaPadrao">
             <div id="dadosTabuada">
                 <p>Digite um numero:<input type="number" name="multiplicado" id="multiplicado"></p>
-                <button class="semOutline">Multiplicar</button>           
+                <button class="semOutline botaoPadrao">Multiplicar</button>           
             </div>
             <div>
                 <select name="tabuada" id="tabuada" size="11"></select>
@@ -108,11 +114,11 @@
         <div class="caixaPadrao">
             <div id="dadosAnalisarNumeros">
                 <p>Digite um numero entre: 1 e 100 <input type="number" name="novoItem" id="novoItem" min="1" max="100"></p>
-                <button class="semOutline">Adicionar</button>         
+                <button class="semOutline botaoPadrao">Adicionar</button>         
             </div>
             <div id="lista">
                 <select name="listaDeNumeros" id="listaDeNumeros" size="10"></select>
-                <button class="semOutline">Finalizar</button>
+                <button class="semOutline botaoPadrao">Finalizar</button>
             </div>
         </div>
     </section>

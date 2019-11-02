@@ -1,0 +1,26 @@
+#introducao{
+    margin-top: 70px;
+    height: calc(100vh - 110px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../img/introdução/javascript.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 142, 236);
+    color: white;
+}
+
+#introducao>p{
+    margin: 10px 30px;
+    width: 500px;
+    font-weight: bolder;
+    text-align: justify;
+    text-shadow: 3px 3px black;
+}
+
+#credito{
+    text-align: center!important;
+}

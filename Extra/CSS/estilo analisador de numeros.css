@@ -1,0 +1,17 @@
+#dadosAnalisarNumeros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#listaDeNumeros{
+    width: 150px;
+}

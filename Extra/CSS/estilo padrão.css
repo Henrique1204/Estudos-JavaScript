@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font:normal 15pt Arial, sans-serif;
+}
+
+.semOutline:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+h2{
+    width: 500px;
+    font-size: 25pt;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+section{
+    background-color: rgb(70, 142, 236);
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.caixaPadrao{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+.botaoPadrao{
+    margin-left: 20px;
+    font-size: 12pt;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+p ,label{
+    font-size: 15pt;
+    text-shadow: 1px 1px rgb(99, 93, 93);
+}
