@@ -285,3 +285,14 @@ section{
 #listaDeNumeros{
     width: 150px;
 }
+
+footer{
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
