@@ -51,6 +51,7 @@ function adicionarNumerosNaListaDeAnalise(){
         alert('[ERRO] o valor não está dentro do limite ou não foi informado');
     };
     novoItem.value = '';
+    novoItem.focus();
 };
 
 function analisarNumeros(){
