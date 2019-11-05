@@ -24,7 +24,7 @@ window.onload = setInterval(function(){
     if(comprimento === 'Bom dia'){
         imagemDoPeriodoDoDia.src = 'img/período do dia/manhã.jpg';
         periodoDoDia.style.backgroundColor = '#F5D8BA';
-    }else if(comprimento === 'Bom tarde'){
+    }else if(comprimento === 'Boa tarde'){
         imagemDoPeriodoDoDia.src = 'img/período do dia/tarde.jpg';
         periodoDoDia.style.backgroundColor = '#FDA403';
     }else{
